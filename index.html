@@ -11,7 +11,8 @@
   <meta property="og:type" content="website">
   <title>ZarishHealth | Care that keeps working offline</title>
   <link rel="icon" href="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/favicon/zarishhealth-favicon-web.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <!-- The repository file is style.css; this explicit reference fixes the unstyled live page. -->
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <header class="site-header">
@@ -43,14 +44,11 @@
             <span>Offline-first</span><span>Self-hosted</span><span>Open standards</span>
           </div>
         </div>
-
         <div class="hero-art" aria-label="ZarishHealth site network illustration">
           <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-wide-2560x640.png" alt="ZarishHealth banner">
           <div class="network-card">
             <div class="status"><i></i> Clinic site operational</div>
-            <div class="network-line">
-              <span>Reception</span><b>↔</b><span>Local store</span><b>↔</b><span>Clinician</span>
-            </div>
+            <div class="network-line"><span>Reception</span><b>↔</b><span>Local store</span><b>↔</b><span>Clinician</span></div>
             <small>Sync happens when a connection becomes available — never before care can begin.</small>
           </div>
         </div>
@@ -59,150 +57,33 @@
 
     <section class="section" id="why">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow blue">WHY ZARISHHEALTH</p>
-          <h2>Good care should not depend on a perfect connection.</h2>
-          <p>Many health teams work across rural, mobile or emergency settings. They need reliable records at the point of care, even when power, bandwidth and infrastructure are uncertain.</p>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow blue">WHY ZARISHHEALTH</p><h2>Good care should not depend on a perfect connection.</h2><p>Many health teams work across rural, mobile or emergency settings. They need reliable records at the point of care, even when power, bandwidth and infrastructure are uncertain.</p></div>
         <div class="cards three">
-          <article class="card">
-            <div class="icon">⌁</div>
-            <h3>Work offline</h3>
-            <p>Staff can continue registering people, recording consultations and managing services without an internet connection.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">⌂</div>
-            <h3>Keep control locally</h3>
-            <p>Run the system on hardware you control. Your operational data does not need to pass through a vendor’s cloud.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">↔</div>
-            <h3>Connect when ready</h3>
-            <p>Local devices can synchronise over Wi-Fi or an occasional uplink when a connection is available.</p>
-          </article>
+          <article class="card"><div class="icon">⌁</div><h3>Work offline</h3><p>Staff can continue registering people, recording consultations and managing services without an internet connection.</p></article>
+          <article class="card"><div class="icon">⌂</div><h3>Keep control locally</h3><p>Run the system on hardware you control. Your operational data does not need to pass through a vendor’s cloud.</p></article>
+          <article class="card"><div class="icon">↔</div><h3>Connect when ready</h3><p>Local devices can synchronise over Wi-Fi or an occasional uplink when a connection is available.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section dark" id="how">
       <div class="container">
-        <div class="section-heading light">
-          <p class="eyebrow green">A SIMPLE MODEL</p>
-          <h2>Each site can stand on its own.</h2>
-          <p>The local site is the source of truth. Connectivity improves coordination, but it never becomes a condition for providing care.</p>
-        </div>
-
+        <div class="section-heading light"><p class="eyebrow green">A SIMPLE MODEL</p><h2>Each site can stand on its own.</h2><p>The local site is the source of truth. Connectivity improves coordination, but it never becomes a condition for providing care.</p></div>
         <div class="architecture">
-          <div class="site-box">
-            <span class="site-label">CLINIC SITE · NO INTERNET REQUIRED</span>
-            <div class="site-nodes">
-              <div>
-                <strong>Reception</strong>
-                <small>Registration</small>
-              </div>
-              <div>
-                <strong>Clinician</strong>
-                <small>Consultation</small>
-              </div>
-              <div>
-                <strong>Lab / pharmacy</strong>
-                <small>Results &amp; stock</small>
-              </div>
-            </div>
-            <div class="store">Local store · working records</div>
-          </div>
-
-          <div class="sync-arrow">⇄<small>optional sync</small></div>
-
-          <div class="hq-box">
-            <strong>HQ / ministry</strong>
-            <small>Aggregation when a link exists</small>
-          </div>
+          <div class="site-box"><span class="site-label">CLINIC SITE · NO INTERNET REQUIRED</span><div class="site-nodes"><div><strong>Reception</strong><small>Registration</small></div><div><strong>Clinician</strong><small>Consultation</small></div><div><strong>Lab / pharmacy</strong><small>Results &amp; stock</small></div></div><div class="store">Local store · working records</div></div>
+          <div class="sync-arrow">⇄<small>optional sync</small></div><div class="hq-box"><strong>HQ / ministry</strong><small>Aggregation when a link exists</small></div>
         </div>
-
-        <div class="principles">
-          <div>
-            <b>Local-first data</b>
-            <span>A complete usable record stays at the site.</span>
-          </div>
-          <div>
-            <b>Open standards</b>
-            <span>Designed around interoperable health information.</span>
-          </div>
-          <div>
-            <b>Privacy by architecture</b>
-            <span>Less data leaves the building by default.</span>
-          </div>
-        </div>
+        <div class="principles"><div><b>Local-first data</b><span>A complete usable record stays at the site.</span></div><div><b>Open standards</b><span>Designed around interoperable health information.</span></div><div><b>Privacy by architecture</b><span>Less data leaves the building by default.</span></div></div>
       </div>
     </section>
 
     <section class="section" id="start">
-      <div class="container start-grid">
-        <div>
-          <p class="eyebrow blue">GET STARTED</p>
-          <h2>Start with understanding, not complexity.</h2>
-          <p>ZarishHealth is being developed carefully. Begin with the public overview, then review the design workspace and help describe the needs of the people who will use it.</p>
-        </div>
-
-        <div class="start-links">
-          <a href="https://github.com/zarishhealth/docs">
-            <strong>Documentation</strong>
-            <span>Guides, decisions and plain-language project information →</span>
-          </a>
-          <a href="https://github.com/zarishhealth/ZarishHealth-builder">
-            <strong>Builder workspace</strong>
-            <span>Architecture, standards, tests and release evidence →</span>
-          </a>
-          <a href="https://github.com/zarishhealth/.github/issues">
-            <strong>Ask a question or report a problem</strong>
-            <span>Share field needs and feedback on GitHub →</span>
-          </a>
-        </div>
-      </div>
+      <div class="container start-grid"><div><p class="eyebrow blue">GET STARTED</p><h2>Start with understanding, not complexity.</h2><p>ZarishHealth is being developed carefully. Begin with the public overview, then review the design workspace and help describe the needs of the people who will use it.</p></div><div class="start-links"><a href="https://github.com/zarishhealth/docs"><strong>Documentation</strong><span>Guides, decisions and plain-language project information →</span></a><a href="https://github.com/zarishhealth/ZarishHealth-builder"><strong>Builder workspace</strong><span>Architecture, standards, tests and release evidence →</span></a><a href="https://github.com/zarishhealth/.github/issues"><strong>Ask a question or report a problem</strong><span>Share field needs and feedback on GitHub →</span></a></div></div>
     </section>
 
-    <section class="callout">
-      <div class="container callout-inner">
-        <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/icon/zarishhealth-icon-transparent-white.svg" alt="" width="64" height="64">
-        <div>
-          <h2>Built for the places the cloud forgot.</h2>
-          <p>Health software should support people first — wherever they work.</p>
-        </div>
-        <a class="button white" href="https://github.com/zarishhealth">Join the project</a>
-      </div>
-    </section>
+    <section class="callout"><div class="container callout-inner"><img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/icon/zarishhealth-icon-transparent-white.svg" alt="" width="64" height="64"><div><h2>Built for the places the cloud forgot.</h2><p>Health software should support people first — wherever they work.</p></div><a class="button white" href="https://github.com/zarishhealth">Join the project</a></div></section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/logo/zarishhealth-logo-horizontal-light.svg" alt="ZarishHealth" width="190">
-        <p>Offline-first health information infrastructure for low-resource environments.</p>
-      </div>
-
-      <div>
-        <strong>Project</strong>
-        <a href="https://github.com/zarishhealth">Organization</a>
-        <a href="https://github.com/zarishhealth/docs">Documentation</a>
-        <a href="https://github.com/zarishhealth/.github">Brand &amp; policies</a>
-      </div>
-
-      <div>
-        <strong>Community</strong>
-        <a href="https://github.com/zarishhealth/.github/issues">Issues</a>
-        <a href="https://github.com/zarishhealth/ZarishHealth-builder/discussions">Discussions</a>
-        <a href="https://github.com/zarishhealth/.github/blob/main/profile/README.md">About ZarishHealth</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© ZarishHealth · Open source project</span>
-      <span>Technical infrastructure does not by itself confer regulatory compliance.</span>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container footer-grid"><div><img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/logo/zarishhealth-logo-horizontal-light.svg" alt="ZarishHealth" width="190"><p>Offline-first health information infrastructure for low-resource environments.</p></div><div><strong>Project</strong><a href="https://github.com/zarishhealth">Organization</a><a href="https://github.com/zarishhealth/docs">Documentation</a><a href="https://github.com/zarishhealth/.github">Brand &amp; policies</a></div><div><strong>Community</strong><a href="https://github.com/zarishhealth/.github/issues">Issues</a><a href="https://github.com/zarishhealth/ZarishHealth-builder/discussions">Discussions</a><a href="https://github.com/zarishhealth/.github/blob/main/profile/README.md">About ZarishHealth</a></div></div><div class="container footer-bottom"><span>© ZarishHealth · Open source project</span><span>Technical infrastructure does not by itself confer regulatory compliance.</span></div></footer>
 </body>
 </html>
