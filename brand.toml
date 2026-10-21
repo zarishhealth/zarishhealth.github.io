@@ -1,0 +1,6 @@
+# Brand assets mirrored from the `brand-kit` repository (BLUEPRINT.md section 17).
+# This is the public origin: other sites hot-link https://zarishhealth.github.io/assets/brand/<path>.
+# Regenerate with: ../brand-kit/scripts/brand-sync.sh --update
+version = "1.0.0"
+groups = ["favicon", "icon", "logo", "social", "banner"]
+files = []
