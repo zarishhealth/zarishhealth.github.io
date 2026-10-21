@@ -1,0 +1,9 @@
+version = 1
+
+# The whole site — the page, the stylesheet, the published brand mirror under
+# `assets/brand/` and the well-known documents — is MIT, as `LICENSE` says.
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 ZarishHealth"
+SPDX-License-Identifier = "MIT"
